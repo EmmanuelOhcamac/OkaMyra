@@ -1,4 +1,4 @@
-V 0.0.6
+V 0.0.7
 
 --------------
 # Reporte de versión #
@@ -8,6 +8,27 @@ V 0.0.6
 > Implementación de movimiento del jugador
 > Implementación de movimiento del enemigo
 > Implementación de rastreo del enemigo contra el jugador
+> Implementación de sistema de apuntado y ataque del jugador
+> Implementación de entrada de daño al jugador
+> Implementación de sistema de muerte del jugador
+
+> Implementación de sprits para:
+ - Jugador Idle
+ - Jugador Walk
+ - Jugador Damage
+
+ - Enemigo Idle
+ - Enemigo Walk
+
+> Implementación de animaciones para:
+ - Jugador Idle
+ - Jugador Walk
+ - Jugador Damage
+
+ - Enemigo Idle
+ - Enemigo Walk
+
+
 --------------
 
 ##OkaMyra##
@@ -17,7 +38,7 @@ V 0.0.6
 
 ## Tabla de evaluacion:
 | Nombre | Colaboracion | Comunicacion | Responsabilidad |
-| ACE	 | 	10	|	10     | 	9	 |
+| ACE	 | 	9	|	10     | 	9	 |
 
 
 ##  1.1. Resumen del juego:  ##

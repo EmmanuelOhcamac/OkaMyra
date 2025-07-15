@@ -5,38 +5,74 @@ using UnityEngine;
 
 public class Scr_PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    public float speed = 5f;
+    public int life = 50;
 
-    private Rigidbody2D playerRb;
-    private Vector2 moveInput;
+    private Rigidbody2D rb2D;
+    private Vector2 movementInput;
 
-    public Animator animator;
+    private bool recibeDamage;
+    public float fuerzaRebote = 10f;
+    public bool dead;
+
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerRb = GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        moveInput = new Vector2(moveX, moveY).normalized;
-        animator.SetFloat("movement", moveX * speed);
-        if (moveX < 0)
+        if (!dead)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            movementInput.x = Input.GetAxisRaw("Horizontal");
+            movementInput.y = Input.GetAxisRaw("Vertical");
+
         }
-        if (moveX > 0)
+        else
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            movementInput.x = 0;
+            movementInput.y = 0;
         }
+        if (!recibeDamage)
+
+            movementInput = movementInput.normalized;
+
+        animator.SetFloat("Horizontal", movementInput.x);
+        animator.SetFloat("Vertical", movementInput.y);
+        animator.SetFloat("Speed", movementInput.magnitude);
+        animator.SetBool("recibeDamage", recibeDamage);
+        
+    }
+
+    public void RecibeDamage(Vector2 direction, int damage)
+    {
+        if (!recibeDamage)
+        {
+            recibeDamage = true;
+            life -= damage;
+            if (life < 0)
+            {
+                dead = true;
+            }
+            if (!dead)
+            {
+                Vector2 rebote = new Vector2(transform.position.x - direction.x, transform.position.y - direction.y).normalized;
+                rb2D.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
+            }
+        }
+    }
+    public void DesactiveDamage()
+    {
+        recibeDamage = false;
     }
 
     private void FixedUpdate()
     {
-        playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+        rb2D.MovePosition(rb2D.position + movementInput * speed * Time.fixedDeltaTime);
     }
 }
