@@ -13,6 +13,8 @@ V 0.0.7
 > Implementación de sistema de muerte del jugador
 
 > Implementación de sprits para:
+ - Escenario Lujuria
+
  - Jugador Idle
  - Jugador Walk
  - Jugador Damage
