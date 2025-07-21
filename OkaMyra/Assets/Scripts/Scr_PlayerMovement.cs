@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Scr_PlayerMovement : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class Scr_PlayerMovement : MonoBehaviour
     public bool dead;
 
     private Animator animator;
+
+    public GameObject preFabTrigo;
+    public GameObject preFabJitomate;
 
     // Start is called before the first frame update
     void Start()
@@ -74,5 +78,21 @@ public class Scr_PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + movementInput * speed * Time.fixedDeltaTime);
+    }
+
+    public void SembrarTrigo(InputAction.CallbackContext contexto)
+    {
+        if (contexto.started)
+        {
+            Instantiate(preFabTrigo, transform.position, Quaternion.identity);
+        }
+    }
+
+    public void SembrarJitomate(InputAction.CallbackContext contexto)
+    {
+        if (contexto.started)
+        {
+            Instantiate(preFabJitomate, transform.position, Quaternion.identity);
+        }
     }
 }

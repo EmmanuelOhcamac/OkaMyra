@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 51766350}
   - component: {fileID: 51766354}
   - component: {fileID: 51766355}
+  - component: {fileID: 51766356}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -159,6 +160,8 @@ MonoBehaviour:
   life: 50
   fuerzaRebote: 20
   dead: 0
+  preFabTrigo: {fileID: 3241154373869285821, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+  preFabJitomate: {fileID: 799227268975550345, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
 --- !u!50 &51766351
 Rigidbody2D:
   serializedVersion: 4
@@ -320,6 +323,68 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &51766356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51766349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 98d9c6dfbc081c8498843ce35c76164a, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51766350}
+        m_TargetAssemblyTypeName: Scr_PlayerMovement, Assembly-CSharp
+        m_MethodName: SembrarTrigo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5b0bd1d0-4137-4b44-99b7-4e3828405830
+    m_ActionName: Player/SiembrarTrigo[/Keyboard/c]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51766350}
+        m_TargetAssemblyTypeName: Scr_PlayerMovement, Assembly-CSharp
+        m_MethodName: SembrarJitomate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8cf3d86e-e408-4464-9b6b-d8f08f6a016a
+    m_ActionName: Player/SiembraJitomate[/Keyboard/b]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &60222799
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +890,128 @@ MonoBehaviour:
   bulletTransform: {fileID: 625367857}
   canFire: 1
   timeBetweenFiring: 0.5
+--- !u!1001 &1806743153234727910
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.946431
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1954117
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218801938514626384, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241154373869285821, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_Name
+      value: Trigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186827779549382467, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409287189839095484, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 94b3a54095bf3bd4cbaba418ee709c5d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2cc86799d25e264448f55acb4974745e, type: 3}
+--- !u!1001 &4175272610766937621
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 799227268975550345, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_Name
+      value: Jitomate
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877756967499097739, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93b94d136c960e84db03c720f1819af8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -833,3 +1020,5 @@ SceneRoots:
   - {fileID: 1618373965}
   - {fileID: 51766353}
   - {fileID: 60222801}
+  - {fileID: 1806743153234727910}
+  - {fileID: 4175272610766937621}

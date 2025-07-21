@@ -1,0 +1,54 @@
+{
+    "name": "ImputSystem",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "31770794-9cea-40e6-8bd9-cd3e28302b8d",
+            "actions": [
+                {
+                    "name": "SiembrarTrigo",
+                    "type": "Button",
+                    "id": "5b0bd1d0-4137-4b44-99b7-4e3828405830",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SiembraJitomate",
+                    "type": "Button",
+                    "id": "8cf3d86e-e408-4464-9b6b-d8f08f6a016a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bc69204d-eda1-4f45-be1e-d512471bb043",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SiembrarTrigo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "755e7241-de70-429f-9502-8b55505065d9",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SiembraJitomate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,4 +1,4 @@
-V 0.0.7
+V 0.0.8
 
 --------------
 # Reporte de versión #
@@ -11,6 +11,7 @@ V 0.0.7
 > Implementación de sistema de apuntado y ataque del jugador
 > Implementación de entrada de daño al jugador
 > Implementación de sistema de muerte del jugador
+> Implementación de sistema de crecimiento de brotes
 
 > Implementación de sprits para:
  - Jugador Idle
@@ -20,6 +21,12 @@ V 0.0.7
  - Enemigo Idle
  - Enemigo Walk
 
+ - Jitomate Siembra
+ - Jitomate Crecimiento
+
+ - Trigo Siembra
+ - Trigo Crecimiento
+
 > Implementación de animaciones para:
  - Jugador Idle
  - Jugador Walk
@@ -28,6 +35,8 @@ V 0.0.7
  - Enemigo Idle
  - Enemigo Walk
 
+ - Trigo Crecimiento
+ - Jitomate Crecimiento
 
 --------------
 
