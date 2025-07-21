@@ -14,6 +14,8 @@ V 0.0.8
 > Implementación de sistema de crecimiento de brotes
 
 > Implementación de sprits para:
+ - Escenario Lujuria
+
  - Jugador Idle
  - Jugador Walk
  - Jugador Damage
