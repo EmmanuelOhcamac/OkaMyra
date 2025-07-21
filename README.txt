@@ -1,6 +1,6 @@
 V 0.0.8
 
---------------
+---------------
 # Reporte de versión #
 
 > Aplicación de mecánicas básicas 
