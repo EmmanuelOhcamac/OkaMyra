@@ -12,6 +12,9 @@ public class Scr_EnemyMovement : MonoBehaviour
     private Vector2 movement;
 
     private bool playerAlive;
+    public int life = 50;
+    private bool recibeDamage;
+    public bool dead;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +26,18 @@ public class Scr_EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerAlive)
+        recibeDamage = false;
+        if (!dead)
         {
-            Movement();
+            if (playerAlive)
+            {
+                Movement();
+            }
         }
-        
+        else if (dead == true)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Movement()
@@ -45,6 +55,24 @@ public class Scr_EnemyMovement : MonoBehaviour
         }
 
         rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+    }
+
+    public void RecibeDamage(int damage)
+    {
+        if (!recibeDamage)
+        {
+            recibeDamage = true;
+            life -= damage;
+            if (life <= 0)
+            {
+                dead = true;
+            }
+        }
+    }
+
+    public void DesactiveDamage()
+    {
+        recibeDamage = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

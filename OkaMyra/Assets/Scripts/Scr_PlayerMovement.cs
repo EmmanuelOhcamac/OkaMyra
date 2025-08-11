@@ -59,14 +59,9 @@ public class Scr_PlayerMovement : MonoBehaviour
         {
             recibeDamage = true;
             life -= damage;
-            if (life < 0)
+            if (life <= 0)
             {
                 dead = true;
-            }
-            if (!dead)
-            {
-                Vector2 rebote = new Vector2(transform.position.x - direction.x, transform.position.y - direction.y).normalized;
-                rb2D.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
             }
         }
     }

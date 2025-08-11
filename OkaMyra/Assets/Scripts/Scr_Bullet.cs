@@ -30,4 +30,18 @@ public class Scr_Bullet : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<Scr_EnemyMovement>().RecibeDamage(10);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Bos"))
+        {
+            collision.gameObject.GetComponent<Scr_Bos>().RecibeDamage(10);
+            Destroy(gameObject);
+        }
+    }
 }

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Bos
   layers:
   - Default
   - TransparentFX
@@ -58,4 +60,7 @@ TagManager:
     locked: 0
   - name: Cosechas
     uniqueID: 40177393
+    locked: 0
+  - name: Nuves
+    uniqueID: 2501640765
     locked: 0

@@ -1,4 +1,4 @@
-V 0.0.8
+V 0.0.9
 
 ---------------
 # Reporte de versión #
@@ -12,9 +12,15 @@ V 0.0.8
 > Implementación de entrada de daño al jugador
 > Implementación de sistema de muerte del jugador
 > Implementación de sistema de crecimiento de brotes
+> Implementación de sistema de respawn de enemigos
+> Implementación de sistema de barra de vida del jugador
+> Implementación de sistema de barra de vida del BOSS
+> Implementación de sistema de Menu
 
 > Implementación de sprits para:
  - Escenario Lujuria
+
+ - Menu
 
  - Jugador Idle
  - Jugador Walk
@@ -22,6 +28,8 @@ V 0.0.8
 
  - Enemigo Idle
  - Enemigo Walk
+
+ - Boss Idle
 
  - Jitomate Siembra
  - Jitomate Crecimiento
