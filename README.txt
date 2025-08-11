@@ -1,4 +1,4 @@
-V 0.0.9
+V 0.1.0
 
 ---------------
 # Reporte de versión #
@@ -7,6 +7,7 @@ V 0.0.9
 
 > Implementación de movimiento del jugador
 > Implementación de movimiento del enemigo
+> Implementación de movimiento del jefe
 > Implementación de rastreo del enemigo contra el jugador
 > Implementación de sistema de apuntado y ataque del jugador
 > Implementación de entrada de daño al jugador
@@ -30,6 +31,7 @@ V 0.0.9
  - Enemigo Walk
 
  - Boss Idle
+ - Boss atack
 
  - Jitomate Siembra
  - Jitomate Crecimiento
@@ -44,6 +46,9 @@ V 0.0.9
 
  - Enemigo Idle
  - Enemigo Walk
+
+ - Boss Idle
+ - Boss Atack
 
  - Trigo Crecimiento
  - Jitomate Crecimiento
