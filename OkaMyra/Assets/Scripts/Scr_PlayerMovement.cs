@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Scr_PlayerMovement : MonoBehaviour
 {
@@ -61,7 +62,8 @@ public class Scr_PlayerMovement : MonoBehaviour
             life -= damage;
             if (life <= 0)
             {
-                dead = true;
+                //dead = true;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }

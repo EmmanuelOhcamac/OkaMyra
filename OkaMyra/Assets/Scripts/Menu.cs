@@ -14,4 +14,12 @@ public class Menu : MonoBehaviour
         Debug.Log("Saliendo...");
         Application.Quit();
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    public void menu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
 }

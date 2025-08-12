@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using UnityEngine.SceneManagement;
+
 
 public class Scr_Bos : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class Scr_Bos : MonoBehaviour
     [SerializeField] private GameObject[] enemigos;
     [SerializeField] private float tiempoEnemigos;
 
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +59,8 @@ public class Scr_Bos : MonoBehaviour
             life -= damage;
             if (life <= 0)
             {
-                dead = true;
+                //dead = true;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
             }
         }
     }

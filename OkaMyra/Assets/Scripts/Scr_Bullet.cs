@@ -43,5 +43,9 @@ public class Scr_Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Scr_Bos>().RecibeDamage(10);
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
