@@ -22,7 +22,7 @@
 - Controles: Teclas W, A, S, D, para caminar, mouse para apuntar, boton izquierdo del mosue para disparar.
 
 ----------------------
-# 🔥Tabla de evaluacion:🔥 #
+# 💓Tabla de evaluacion:💓 #
 | Nombre | Colaboracion | Comunicacion | Responsabilidad
 | ----------- | ----------- | ----------- | ----------- |
 | ACE| 	9|	10| 9	|
@@ -40,14 +40,14 @@
 
 ----------------------------------
 
-## ✨1.2. Resumen de la historia del juego✨ ##
+## 📜1.2. Resumen de la historia del juego📜 ##
 
 🐈 Okam, un tierno gato, mascota de un hechizero a caido en una mazmorra demoniaca mientras su amo practicava un antiguo ritual. 
 🌅 Ahora debe buscar la forma de salir de ese lugar utilizando los conocimientos mágicos que aprendió de su dueño, enfrentandose con criaturas que jamas se habría imaginado.
 
 -----------------------------------
 
-## 🔥1.3. Objetivo del juego🔥 ##
+## 🎯1.3. Objetivo del juego🎯 ##
 
 - ⚔️El juego tiene como objetivo escapar de la mazmorra, lo cual se consigue eliminando a la jefa.
 > - La jefa invoca mounstros repetidamente.
@@ -60,16 +60,16 @@
 
 -------------------------------
 
-## ✨2. Jugabilidad✨ ##
+## 🕹️2. Jugabilidad🕹️ ##
 
-![alt text](OkaMyra/Assets/Sprites/Scene/luguria2.png)
+![alt text](OkaMyra/Assets/Sprites/GDD/Movimiento.png)
 
 - ⬆️ Teclas W, A, S, D, para moverse dentro de la escena
 - 🐭 Movimiento del mouse para apuntar las bolas de fuego
 - 🔥 Click izquierdo del mousepara disparar las bolas de fuego
 ---------------------------------
 
-## 🔥3. Mundo del juego🔥 ##
+## 🪐3. Mundo del juego🪐 ##
 
 - 🕹️ El GamePlay se desarrolla en una mazmorra obscura, llena de criaturas terribles.
 - 💀 Los enemigos básicos "Disrruptores" tendrán colores más visiblesque le faciliten la visión al jugador.
@@ -78,7 +78,7 @@
 
 ---------------------------------
 
-## ✨4. Mecánicas del juego✨ ##
+## 🆚4. Mecánicas del juego🆚 ##
 
 🎯 El jugador tendrá un objetivo:Sovrevivir a las hordas de enemigos.
 👿 La complejidad del juego dependerá de su habilidad para moverse en el escenario, atacar a los "Disrruptores" y atacar a la jefa sin descuidar sus propios puntos de vida.
@@ -87,7 +87,7 @@
 
 ---------------------------------
 
-## 🔥5. Personajes🔥 ##
+## 👷‍♀️5. Personajes👷‍♀️ ##
 
 - 😼 Okam: Personaje principal
 > - Gatito tierno con sombrero de mago y una bola de fuego siempre a su lado.
@@ -105,7 +105,7 @@
 
 ## ✨6. Plan de proyecto✨ ##
 
-![alt text](OkaMyra/Assets/Sprites/Scene/luguria2.png)
+![alt text](OkaMyra/Assets/Sprites/GDD/Gantt.png)
 
 - 💡 Idea
 > - Generar las ideas y buscar los posibles inconvenientes antes de empezar el diseño del juego
