@@ -88,7 +88,3 @@ https://okamatl-orion.itch.io/okamyra
  > Jitomate Crecimiento
 
 --------------
-
-- The binding of Isaac en steam. (s/f). Steampowered.com. Recuperado el 26 de
-mayo de 2025, de
-https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?l=spanish
