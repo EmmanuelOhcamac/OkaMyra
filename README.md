@@ -17,6 +17,7 @@ V 0.1.1
 
 --------------
 # 💓Video de avances💓 #
+https://youtu.be/_1qalE88bhE
 
 --------------
 # 🔥Enlace a Itch.io🔥 #
